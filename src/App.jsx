@@ -6,8 +6,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Home from './screens/Home';
-import profil from './screens/profil';
+import Profil from './screens/Profil';
 import Pengaturan from './screens/Pengaturan';
+import HistoryScreen from './screens/HistoryScreen';
+import SettingsScreen from './screens/SettingsScreen';
+import StartCallScreen from './screens/StartCallScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -23,7 +26,7 @@ function MyTabs() {
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Profil" component={profil} 
+      <Tab.Screen name="Profil" component={Profil} 
       options={{
           tabBarLabel: 'Profil',
           tabBarIcon: ({ color }) => (
@@ -45,6 +48,9 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={MyTabs} options={{headerShown:false}}/>
+        <Stack.Screen name="CallHistory" component={HistoryScreen} />
+        <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="StartCall" component={StartCallScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
