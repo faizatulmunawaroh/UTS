@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f8f8',
+    backgroundColor: '#FFF8DC',
   },
   profileImage: {
     width: 100,
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#FF7F50',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,

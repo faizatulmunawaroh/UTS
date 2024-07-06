@@ -7,7 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import Home from './screens/Home';
 import Profil from './screens/Profil';
-import Pengaturan from './screens/Pengaturan';
+import Tentang from './screens/Tentang';
 import HistoryScreen from './screens/HistoryScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import StartCallScreen from './screens/StartCallScreen';
@@ -33,11 +33,11 @@ function MyTabs() {
             <MaterialCommunityIcons name="account" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Pengaturan" component={Pengaturan} 
+      <Tab.Screen name="Tentang" component={Tentang} 
       options={{
-          tabBarLabel: 'Pengaturan',
+          tabBarLabel: 'Tentang',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons name="information" color={color} size={26} />
           ),
         }}/>
     </Tab.Navigator>
